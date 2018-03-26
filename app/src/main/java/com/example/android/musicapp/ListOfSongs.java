@@ -1,7 +1,11 @@
 package com.example.android.musicapp;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -34,6 +38,17 @@ public class ListOfSongs extends AppCompatActivity {
 
 //        let`s learn how to debug
 //        Log.v( "Word at index 7 is "+songs.get(7));
+
+        ListView listView = (ListView) findViewById(R.id.list);
+
+//        //play sound
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                mMediaPlayer = MediaPlayer.create(NumbersActivity.this, R.raw.unu);
+//                mMediaPlayer.start();
+//            }
+//        });
     }
 
 }
