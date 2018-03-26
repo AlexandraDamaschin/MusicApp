@@ -34,7 +34,7 @@ public class ListOfSongs extends AppCompatActivity {
         songs.add(new Song("IDGAK", "Dua Lipa", R.drawable.dua_lipa));
         songs.add(new Song("Perfect", "Ed Sheeran", R.drawable.ed_sheeran));
         songs.add(new Song("Don`t", "Ed Sheeran", R.drawable.ed_sheeran));
-        songs.add(new Song("Fire", "Gavin DeGraw", R.drawable.gavind_deGraw));
+        songs.add(new Song("Fire", "Gavin DeGraw", R.drawable.gavind_degraw));
 
 //        let`s learn how to debug
 //        Log.v( "Word at index 7 is "+songs.get(7));
