@@ -21,19 +21,19 @@ public class ListOfSongs extends AppCompatActivity {
         ArrayList<Song> songs = new ArrayList<Song>();
 
         //songs added
-        songs.add(new Song("Sing me to sleep", "Alan Walker", R.drawable.number_one));
-        songs.add(new Song("I wanna know", "Alesso", R.drawable.number_two));
-        songs.add(new Song("I need you", "Alesso", R.drawable.number_three));
-        songs.add(new Song("Meant to be", "Bebe Rexha", R.drawable.number_four));
-        songs.add(new Song("Dancing on my own", "Calum Scott", R.drawable.number_five));
-        songs.add(new Song("You are the reason", "Calum Scott", R.drawable.number_six));
-        songs.add(new Song("IDGAK", "Dua Lipa", R.drawable.number_seven));
-        songs.add(new Song("Perfect", "Ed Sheeran", R.drawable.number_eight));
-        songs.add(new Song("Don`t", "Ed Sheeran", R.drawable.number_nine));
-        songs.add(new Song("Fire", "Gavin DeGraw", R.drawable.number_ten));
+        songs.add(new Song("Sing me to sleep", "Alan Walker", R.drawable.alan_walker));
+        songs.add(new Song("I wanna know", "Alesso", R.drawable.alesso));
+        songs.add(new Song("I need you", "Alesso", R.drawable.alesso));
+        songs.add(new Song("Meant to be", "Bebe Rexha", R.drawable.bebe_rexha));
+        songs.add(new Song("Dancing on my own", "Calum Scott", R.drawable.calum_scott));
+        songs.add(new Song("You are the reason", "Calum Scott", R.drawable.calum_scott));
+        songs.add(new Song("IDGAK", "Dua Lipa", R.drawable.dua_lipa));
+        songs.add(new Song("Perfect", "Ed Sheeran", R.drawable.ed_sheeran));
+        songs.add(new Song("Don`t", "Ed Sheeran", R.drawable.ed_sheeran));
+        songs.add(new Song("Fire", "Gavin DeGraw", R.drawable.gavind_deGraw));
 
 //        let`s learn how to debug
 //        Log.v( "Word at index 7 is "+songs.get(7));
-
-
     }
+
+}
