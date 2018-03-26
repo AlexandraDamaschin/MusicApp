@@ -23,7 +23,7 @@ public class ListOfSongs extends AppCompatActivity {
         //songs added
         songs.add(new Song("Sing me to sleep", "Alan Walker", R.drawable.number_one));
         songs.add(new Song("I wanna know", "Alesso", R.drawable.number_two));
-        songs.add(new Song("I need you", "Armin van Buuren", R.drawable.number_three));
+        songs.add(new Song("I need you", "Alesso", R.drawable.number_three));
         songs.add(new Song("Meant to be", "Bebe Rexha", R.drawable.number_four));
         songs.add(new Song("Dancing on my own", "Calum Scott", R.drawable.number_five));
         songs.add(new Song("You are the reason", "Calum Scott", R.drawable.number_six));
