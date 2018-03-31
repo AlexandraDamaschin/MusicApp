@@ -21,12 +21,12 @@ public class MainActivity extends AppCompatActivity {
         //set click listener on that view
         songs.setOnClickListener(new View.OnClickListener() {
             @Override
+            //intent to open songs activity
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, ListOfSongs.class);
-
+                Intent songsIntent = new Intent(MainActivity.this, ListOfSongs.class);
                 // Start the new activity
-                startActivity(numbersIntent);
+                startActivity(songsIntent);
             }
         });
     }

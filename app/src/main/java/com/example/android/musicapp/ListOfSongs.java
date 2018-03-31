@@ -1,10 +1,7 @@
 package com.example.android.musicapp;
 
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -36,8 +33,8 @@ public class ListOfSongs extends AppCompatActivity {
         songs.add(new Song("Don`t", "Ed Sheeran", R.drawable.ed_sheeran));
         songs.add(new Song("Fire", "Gavin DeGraw", R.drawable.gavind_degraw));
 
-//        let`s learn how to debug
-//        Log.v( "Word at index 7 is "+songs.get(7));
+//       debug
+       // Log.v("Word at index 7 is " + songs.get(7));
 
         ListView listView = (ListView) findViewById(R.id.list);
 
