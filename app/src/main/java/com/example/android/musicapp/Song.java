@@ -1,8 +1,6 @@
 package com.example.android.musicapp;
 
-/**
- * Created by e6420 on 3/26/2018.
- */
+//data model
 
 public class Song {
     private String mNameSong;
@@ -12,11 +10,10 @@ public class Song {
 
     //constructor for text views and image
     //nameSong, artistName and image
-
     public Song(String nameSong, String artistName, int imageResourceId) {
-        mNameSong = nameSong;
-        mArtistName = artistName;
-        mImageResourceId = imageResourceId;
+        this.mNameSong = nameSong;
+        this.mArtistName = artistName;
+        this.mImageResourceId = imageResourceId;
     }
 
     //    get name song
