@@ -4,17 +4,26 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.musicapp.MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <!--play song image-->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/play" />
 
         <!--image artist-->
         <ImageView
             android:id="@+id/image"
             android:layout_width="50dp"
             android:layout_height="70dp" />
+
 
         <LinearLayout
             android:id="@+id/text_container"
@@ -49,13 +58,5 @@
 
         </LinearLayout>
 
-        <!--play song image-->
-        <ImageView
-            android:id="@+id/play_song"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/play" />
-
     </LinearLayout>
-
 </ScrollView>
