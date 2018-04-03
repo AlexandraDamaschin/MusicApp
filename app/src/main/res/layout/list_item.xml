@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.musicapp.MainActivity">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,16 +12,16 @@
 
         <!--play song image-->
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="7dp"
+            android:layout_width="@dimen/play_image"
+            android:layout_height="@dimen/play_image"
+            android:layout_marginTop="@dimen/play_image_margin"
             android:src="@drawable/play" />
 
         <!--image artist-->
         <ImageView
             android:id="@+id/image"
-            android:layout_width="50dp"
-            android:layout_height="70dp" />
+            android:layout_width="@dimen/artist_image_width"
+            android:layout_height="@dimen/artist_image_height" />
 
 
         <LinearLayout
@@ -35,26 +34,26 @@
             <TextView
                 android:id="@+id/artist_text_view"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
+                android:layout_height="@dimen/text_view_height"
+                android:layout_marginLeft="@dimen/text_view_margin"
+                android:layout_marginStart="@dimen/text_view_margin"
                 android:layout_weight="1"
                 android:gravity="bottom"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textStyle="bold"
-                tools:text="Artist" />
+                tools:text="@string/artists" />
 
             <!--song-->
             <TextView
                 android:id="@+id/song_text_view"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
+                android:layout_height="@dimen/text_view_height"
+                android:layout_marginLeft="@dimen/text_view_margin"
+                android:layout_marginStart="@dimen/text_view_margin"
                 android:layout_weight="1"
                 android:gravity="top"
                 android:textAppearance="?android:textAppearanceMedium"
-                tools:text="Song" />
+                tools:text="@string/songs" />
 
         </LinearLayout>
 

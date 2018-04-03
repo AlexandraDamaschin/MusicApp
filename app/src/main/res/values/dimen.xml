@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="play_image">50dp</dimen>
+    <dimen name="play_image_margin">7dp</dimen>
+    <dimen name="artist_image_width">50dp</dimen>
+    <dimen name="artist_image_height">70dp</dimen>
+    <dimen name="text_view_height">0dp</dimen>
+    <dimen name="text_view_margin">5dp</dimen>
 </resources>
