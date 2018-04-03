@@ -23,7 +23,6 @@
             android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
             android:textStyle="bold"
             tools:text="Artist" />
 
@@ -34,7 +33,6 @@
             android:layout_weight="1"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
             tools:text="Song" />
 
     </LinearLayout>

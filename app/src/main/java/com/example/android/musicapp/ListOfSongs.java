@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class ListOfSongs extends AppCompatActivity {
 
+    private static SongAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,8 @@ public class ListOfSongs extends AppCompatActivity {
        // Log.v("Word at index 7 is " + songs.get(7));
 
         ListView listView = (ListView) findViewById(R.id.list);
+        adapter = new SongAdapter(songs,getApplicationContext());
+        listView.setAdapter(adapter);
 
 //        //play sound
 //        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

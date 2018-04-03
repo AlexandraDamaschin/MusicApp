@@ -13,8 +13,13 @@ import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<Song> {
 
-    public SongAdapter(Context context, ArrayList<Song> songs) {
-        super(context, 0, songs);
+    private ArrayList<Song> song;
+    Context mContext;
+
+    public SongAdapter(ArrayList<Song> song, Context context) {
+        super(context, R.layout.list_item, song);
+        this.song = song;
+        this.mContext = context;
     }
 
     @Override

@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //find the view that shows the numbers cat
-        TextView songs = (TextView) findViewById(R.id.songs);
+        TextView songs = (TextView) findViewById(R.id.songs_list);
         //set click listener on that view
         songs.setOnClickListener(new View.OnClickListener() {
             @Override
