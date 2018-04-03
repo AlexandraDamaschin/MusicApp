@@ -7,7 +7,7 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <!--image artist-->
@@ -27,6 +27,8 @@
                 android:id="@+id/artist_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:gravity="bottom"
                 android:textAppearance="?android:textAppearanceMedium"
@@ -38,6 +40,8 @@
                 android:id="@+id/song_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:gravity="top"
                 android:textAppearance="?android:textAppearanceMedium"
@@ -48,10 +52,10 @@
         <!--play song image-->
         <ImageView
             android:id="@+id/play_song"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/play" />
+
     </LinearLayout>
+
 </ScrollView>
