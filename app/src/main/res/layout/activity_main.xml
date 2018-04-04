@@ -17,6 +17,7 @@
             android:layout_marginLeft="@dimen/title_margin"
             android:layout_marginStart="@dimen/title_margin"
             android:text="@string/play_replay"
+            android:textColor="@color/accent"
             android:textSize="@dimen/title_text_size" />
 
         <!--play replay app-->
@@ -38,6 +39,7 @@
             android:layout_marginStart="@dimen/songs_list_margin"
             android:layout_marginTop="@dimen/songs_list_marginTop"
             android:text="@string/songs"
+            android:textColor="@color/accent"
             android:textSize="@dimen/title_text_size" />
     </LinearLayout>
 

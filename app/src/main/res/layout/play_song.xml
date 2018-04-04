@@ -16,7 +16,6 @@
             android:layout_width="@dimen/artist_image_width"
             android:layout_height="@dimen/artist_image_height" />
 
-
         <!--song-->
         <TextView
             android:id="@+id/song_text_view"
