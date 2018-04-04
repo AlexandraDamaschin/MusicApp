@@ -15,7 +15,6 @@ public class ListOfSongs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.songs_list);
-        setContentView(R.layout.play_song);
 
         // Create a list of words
         ArrayList<Song> songs = new ArrayList<Song>();

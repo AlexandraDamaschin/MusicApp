@@ -33,17 +33,17 @@ public class MainActivity extends AppCompatActivity {
 
         //certain song played
         //find the view that shows the play a song
-        ImageView song = (ImageView) findViewById(R.id.play_song);
-        //set click listener on that view
-        song.setOnClickListener(new ImageView.OnClickListener() {
-            @Override
-            //intent to open songs activity
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
-                Intent songIntent = new Intent(MainActivity.this, ListOfSongs.class);
-                // Start the new activity
-                startActivity(songIntent);
-            }
-        });
+//        ImageView song = (ImageView) findViewById(R.id.play_song);
+//        //set click listener on that view
+//        song.setOnClickListener(new ImageView.OnClickListener() {
+//            @Override
+//            //intent to open songs activity
+//            public void onClick(View view) {
+//                // Create a new intent to open the {@link NumbersActivity}
+//                Intent songIntent = new Intent(MainActivity.this, ListOfSongs.class);
+//                // Start the new activity
+//                startActivity(songIntent);
+//            }
+//        });
     }
 }
