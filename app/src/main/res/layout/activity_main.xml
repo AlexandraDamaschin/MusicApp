@@ -14,18 +14,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginLeft="@dimen/title_margin"
+            android:layout_marginStart="@dimen/title_margin"
             android:text="@string/play_replay"
-            android:textSize="60sp" />
+            android:textSize="@dimen/title_text_size" />
 
         <!--play replay app-->
         <ImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="@dimen/replay_size"
+            android:layout_height="@dimen/replay_size"
+            android:layout_marginLeft="@dimen/replay_margin"
+            android:layout_marginStart="@dimen/replay_margin"
+            android:layout_marginTop="@dimen/replay_marginTop"
             android:src="@drawable/play_replay" />
 
 
@@ -34,11 +34,11 @@
             android:id="@+id/songs_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginLeft="@dimen/songs_list_margin"
+            android:layout_marginStart="@dimen/songs_list_margin"
+            android:layout_marginTop="@dimen/songs_list_marginTop"
             android:text="@string/songs"
-            android:textSize="60sp" />
+            android:textSize="@dimen/title_text_size" />
     </LinearLayout>
 
 </ScrollView>
