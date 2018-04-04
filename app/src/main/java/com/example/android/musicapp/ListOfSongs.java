@@ -3,12 +3,9 @@ package com.example.android.musicapp;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
-
-/**
- * Created by e6420 on 3/26/2018.
- */
 
 public class ListOfSongs extends AppCompatActivity {
 
@@ -18,6 +15,7 @@ public class ListOfSongs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.songs_list);
+        setContentView(R.layout.play_song);
 
         // Create a list of words
         ArrayList<Song> songs = new ArrayList<Song>();
@@ -35,10 +33,10 @@ public class ListOfSongs extends AppCompatActivity {
         songs.add(new Song("Fire", "Gavin DeGraw", R.drawable.gavind_degraw));
 
 //       debug
-       // Log.v("Word at index 7 is " + songs.get(7));
+        // Log.v("Word at index 7 is " + songs.get(7));
 
         ListView listView = (ListView) findViewById(R.id.list);
-        adapter = new SongAdapter(songs,getApplicationContext());
+        adapter = new SongAdapter(songs, getApplicationContext());
         listView.setAdapter(adapter);
 
 //        //play sound

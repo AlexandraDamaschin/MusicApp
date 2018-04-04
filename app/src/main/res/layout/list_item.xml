@@ -12,6 +12,7 @@
 
         <!--play song image-->
         <ImageView
+            android:id="@+id/play_song"
             android:layout_width="@dimen/play_image"
             android:layout_height="@dimen/play_image"
             android:layout_marginTop="@dimen/play_image_margin"

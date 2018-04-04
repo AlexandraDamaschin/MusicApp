@@ -20,7 +20,7 @@
         <!--song-->
         <TextView
             android:id="@+id/song_text_view"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="@dimen/text_view_height"
             android:layout_marginLeft="@dimen/text_view_margin"
             android:layout_marginStart="@dimen/text_view_margin"
@@ -29,9 +29,8 @@
             android:textAppearance="?android:textAppearanceMedium"
             tools:text="@string/songs" />
 
-        <!--song-->
         <LinearLayout
-            android:id="@+id/text_container"
+            android:id="@+id/play_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -47,6 +46,7 @@
                 android:layout_width="@dimen/play_image"
                 android:layout_height="@dimen/play_image"
                 android:src="@drawable/play" />
+
             <ImageView
                 android:layout_width="@dimen/play_image"
                 android:layout_height="@dimen/play_image"
