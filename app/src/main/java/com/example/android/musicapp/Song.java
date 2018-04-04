@@ -7,13 +7,15 @@ public class Song {
     private String mArtistName;
     private static final int NO_IMAGE_PROVIDED = -1;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
+    private String mSong;
 
     //constructor for text views and image
     //nameSong, artistName and image
-    public Song(String nameSong, String artistName, int imageResourceId) {
+    public Song(String nameSong, String artistName, int imageResourceId, String song) {
         this.mNameSong = nameSong;
         this.mArtistName = artistName;
         this.mImageResourceId = imageResourceId;
+        this.mSong = song;
     }
 
     //    get name song
@@ -34,5 +36,10 @@ public class Song {
     //check if song has image or not
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
+
+    //    get song
+    public String getSong() {
+        return mSong;
     }
 }

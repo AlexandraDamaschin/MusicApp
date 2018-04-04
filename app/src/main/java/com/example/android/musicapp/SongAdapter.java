@@ -39,6 +39,10 @@ public class SongAdapter extends ArrayAdapter<Song> {
         TextView songName = (TextView) listItemView.findViewById(R.id.song_text_view);
         songName.setText(currentSong.getNameSong());
 
+        //get song name for song played
+        TextView songNamePlsyed = (TextView) listItemView.findViewById(R.id.song_played);
+        songName.setText(currentSong.getNameSong());
+
         //get artist name
         TextView artistName = (TextView) listItemView.findViewById(R.id.artist_text_view);
         artistName.setText(currentSong.getArtistName());

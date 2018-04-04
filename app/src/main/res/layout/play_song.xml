@@ -18,7 +18,7 @@
 
         <!--song-->
         <TextView
-            android:id="@+id/song_text_view"
+            android:id="@+id/song_played"
             android:layout_width="0dp"
             android:layout_height="@dimen/text_view_height"
             android:layout_marginLeft="@dimen/text_view_margin"
