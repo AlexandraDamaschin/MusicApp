@@ -33,14 +33,30 @@
         <LinearLayout
             android:id="@+id/text_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <!--back to the prev song-->
+            <ImageView
+                android:layout_width="@dimen/play_image"
+                android:layout_height="@dimen/play_image"
+                android:src="@drawable/prev" />
 
-            <!--stop/play-->
+            <!--pause/play-->
+            <ImageView
+                android:layout_width="@dimen/play_image"
+                android:layout_height="@dimen/play_image"
+                android:src="@drawable/play" />
+            <ImageView
+                android:layout_width="@dimen/play_image"
+                android:layout_height="@dimen/play_image"
+                android:src="@drawable/pause" />
 
             <!--next song-->
+            <ImageView
+                android:layout_width="@dimen/play_image"
+                android:layout_height="@dimen/play_image"
+                android:src="@drawable/next" />
 
         </LinearLayout>
 
