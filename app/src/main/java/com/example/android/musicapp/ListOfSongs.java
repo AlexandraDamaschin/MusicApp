@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class ListOfSongs extends AppCompatActivity {
 
     private static SongAdapter adapter;
-    public Song mMediaPlayer;
+    public MediaPlayer  mMediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class ListOfSongs extends AppCompatActivity {
 //        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
 //            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                mMediaPlayer = MediaPlayer.create(NumbersActivity.this, R.raw.unu);
+//                mMediaPlayer = MediaPlayer.create(PlaySongActivity.this, R.raw.i_wanna_know);
 //                mMediaPlayer.start();
 //            }
 //        });
