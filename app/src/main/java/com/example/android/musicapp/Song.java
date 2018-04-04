@@ -7,11 +7,11 @@ public class Song {
     private String mArtistName;
     private static final int NO_IMAGE_PROVIDED = -1;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
-    private String mSong;
+    private int mSong;
 
     //constructor for text views and image
     //nameSong, artistName and image
-    public Song(String nameSong, String artistName, int imageResourceId, String song) {
+    public Song(String nameSong, String artistName, int imageResourceId, int song) {
         this.mNameSong = nameSong;
         this.mArtistName = artistName;
         this.mImageResourceId = imageResourceId;
@@ -39,7 +39,7 @@ public class Song {
     }
 
     //    get song
-    public String getSong() {
+    public int getSong() {
         return mSong;
     }
 }
