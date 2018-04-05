@@ -51,7 +51,7 @@ public class ListOfSongs extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                mMediaPlayer = MediaPlayer.create(PlayedSong.this, R.raw.i_wanna_know);
+                //mMediaPlayer = MediaPlayer.create(PlayedSong.this, R.raw.i_wanna_know);
                 mMediaPlayer.start();
             }
         });

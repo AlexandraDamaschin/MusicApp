@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +26,20 @@ public class MainActivity extends AppCompatActivity {
                 Intent songsIntent = new Intent(MainActivity.this, ListOfSongs.class);
                 // Start the new activity
                 startActivity(songsIntent);
+            }
+        });
+
+        //played songs
+        //find the view that shows the songs
+        ImageView songPlayed = (ImageView) findViewById(R.id.play_song);
+        songPlayed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            //intent to open songs activity
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent songsPlyedIntent = new Intent(PlayedSong.this, ListOfSongs.class);
+                // Start the new activity
+                startActivity(songsPlyedIntent);
             }
         });
     }
