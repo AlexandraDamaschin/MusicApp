@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //find the view that shows the songs
-        TextView songs = (TextView) findViewById(R.id.songs_list);
+        final TextView songs = (TextView) findViewById(R.id.songs_list);
         //set click listener on that view
         songs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,17 +32,28 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //played songs
-        //find the view that shows the songs
-        ImageView songPlayed = (ImageView) findViewById(R.id.play_song);
-        songPlayed.setOnClickListener(new View.OnClickListener() {
+        ListView list = (ListView) findViewById(R.id.list);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            //intent to open songs activity
-            public void onClick(View view) {
-                // Create a new intent to open the {@link NumbersActivity}
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent songsPlyedIntent = new Intent(PlayedSong.this, ListOfSongs.class);
-                // Start the new activity
+//                // Start the new activity
                 startActivity(songsPlyedIntent);
             }
         });
+
+
+        //find the view that shows the songs
+//        ImageView songPlayed = (ImageView) findViewById(R.id.play_song);
+//        songPlayed.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            //intent to open songs activity
+//            public void onClick(View view) {
+//                // Create a new intent to open the {@link NumbersActivity}
+//                Intent songsPlyedIntent = new Intent(PlayedSong.this, ListOfSongs.class);
+//                // Start the new activity
+//                startActivity(songsPlyedIntent);
+//            }
+//        });
     }
 }
