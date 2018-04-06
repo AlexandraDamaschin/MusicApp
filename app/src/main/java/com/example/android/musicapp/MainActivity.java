@@ -30,30 +30,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(songsIntent);
             }
         });
-
-        //played songs
-        ListView list = (ListView) findViewById(R.id.list);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent songsPlyedIntent = new Intent(PlayedSong.this, ListOfSongs.class);
-//                // Start the new activity
-                startActivity(songsPlyedIntent);
-            }
-        });
-
-
-        //find the view that shows the songs
-//        ImageView songPlayed = (ImageView) findViewById(R.id.play_song);
-//        songPlayed.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            //intent to open songs activity
-//            public void onClick(View view) {
-//                // Create a new intent to open the {@link NumbersActivity}
-//                Intent songsPlyedIntent = new Intent(PlayedSong.this, ListOfSongs.class);
-//                // Start the new activity
-//                startActivity(songsPlyedIntent);
-//            }
-//        });
     }
 }
