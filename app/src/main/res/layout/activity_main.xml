@@ -41,6 +41,7 @@
             android:text="@string/songs"
             android:textColor="@color/accent"
             android:textSize="@dimen/title_text_size" />
+
     </LinearLayout>
 
 </ScrollView>
