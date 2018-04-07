@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //find the view that shows the songs
-        final TextView songs = (TextView) findViewById(R.id.songs_list);
+        final TextView songs = findViewById(R.id.songs_list);
         //set click listener on that view
         songs.setOnClickListener(new View.OnClickListener() {
             @Override

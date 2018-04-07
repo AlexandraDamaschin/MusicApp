@@ -38,11 +38,11 @@ public class ListOfSongs extends AppCompatActivity {
 //       debug
         // Log.v("Word at index 7 is " + songs.get(7));
 
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = findViewById(R.id.list);
         adapter = new SongAdapter(songs, getApplicationContext());
         listView.setAdapter(adapter);
 
-        ImageView imageView = (ImageView) findViewById(R.id.play_song);
+        ImageView imageView = findViewById(R.id.play_song);
         adapter = new SongAdapter(songs, getApplicationContext());
         listView.setAdapter(adapter);
 
